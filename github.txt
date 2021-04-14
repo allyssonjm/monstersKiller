@@ -1,0 +1,12 @@
+// no terminal
+git config --global init.defaultBranch main
+git config --global pull.rebase false
+
+//na pasta do projeto
+rm -rf .git
+git init
+git remote add origin https://github.com/allyssonjm/monstersKiller.git
+git pull origin main
+git add --all
+git commit -m "Initial Project"
+git push origin main
